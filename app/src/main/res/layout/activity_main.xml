@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.ujjwalgupta.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#fffffe"
+        app:layout_constraintTop_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/eq"
+        android:layout_width="match_parent"
+        android:layout_height="60.2dp"
+        android:layout_marginTop="0.1dp"
+        android:background="#fffffe"
+        app:layout_constraintTop_toBottomOf="@+id/res" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="#000"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:layout_marginTop="0.8dp"
+            android:background="#fff"
+            android:text="7"
+            android:textSize="30dp"
+            android:onClick="Seven"
+            />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:layout_marginTop="0.8dp"
+            android:background="#fff"
+            android:text="8"
+            android:onClick="Eight"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:layout_marginTop="0.8dp"
+            android:background="#fff"
+            android:text="9"
+            android:onClick="Nine"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/b-plus"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:layout_marginTop="0.8dp"
+            android:background="#fff"
+            android:text="+"
+            android:onClick="add"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="4"
+            android:onClick="Four"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="5"
+            android:onClick="Five"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="6"
+            android:onClick="Six"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b-min"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="-"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="1"
+            android:onClick="One"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="2"
+            android:onClick="Two"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="3"
+            android:onClick="Three"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b-eq"
+            android:layout_width="97dp"
+            android:layout_height="180dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="="
+            android:textSize="30dp"
+            android:onClick="equal"
+            android:layout_rowSpan="2"/>
+
+        <Button
+            android:id="@+id/b-mul"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:textSize="30dp"
+            android:text="%"/>
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="0"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b-div"
+            android:layout_width="97dp"
+            android:layout_height="90dp"
+            android:layout_margin="0.5dp"
+            android:background="#fff"
+            android:text="/"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="688dp" />
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>
