@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+1;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Two(View view) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+2;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Three(View view) {
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+3;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Four(View view) {
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+4;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Five(View view) {
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+5;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Six(View view) {
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+6;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Seven(View view) {
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+7;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Eight(View view) {
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+8;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Nine(View view) {
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10+9;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void Zero(View view) {
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             b=b*10;
-            eqB.setText(eq+'+'+String.valueOf(b));
+            eqB.setText(eq+ch+String.valueOf(b));
         }
     }
     public void add(View view) {
@@ -164,11 +164,56 @@ public class MainActivity extends AppCompatActivity {
         eqB.setText(eq+'+');
         b=0;
     }
+    public void mul(View view) {
+        ch='*';
+        eq=eqB.getText().toString();
+        eqB.setText(eq+'*');
+        b=0;
+    }
+    public void div(View view) {
+        ch='/';
+        eq=eqB.getText().toString();
+        eqB.setText(eq+'/');
+        b=0;
+    }
+    public void sub(View view) {
+        ch='-';
+        eq=eqB.getText().toString();
+        eqB.setText(eq+'-');
+        b=0;
+    }
 
     public void equal(View view) {
         if(ch=='+') {
             a=Integer.parseInt(eq);
             res=String.valueOf(a+b);
+            resB.setText(res);
+            a=b=0;
+            ch=' ';
+            res=" ";
+            eq=" ";
+        }
+        else if(ch=='-') {
+            a=Integer.parseInt(eq);
+            res=String.valueOf(a-b);
+            resB.setText(res);
+            a=b=0;
+            ch=' ';
+            res=" ";
+            eq=" ";
+        }
+        else if(ch=='*') {
+            a=Integer.parseInt(eq);
+            res=String.valueOf(a*b);
+            resB.setText(res);
+            a=b=0;
+            ch=' ';
+            res=" ";
+            eq=" ";
+        }
+        else {
+            a=Integer.parseInt(eq);
+            res=String.valueOf(a/b);
             resB.setText(res);
             a=b=0;
             ch=' ';
