@@ -1,3 +1,3 @@
 # Calculator
 
-A basic calculator app which allows the user to perform all the basic arithmetic operations.  
+An android calculator app developed as a part of MAD course. The app as of now allows the user to perform basic arithmetic operations. The app uses grid layout to position buttons .  
